@@ -1,0 +1,1180 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif JP', serif;
+    color: #646464;
+}
+
+:root{
+    --clr-black: #646464;
+    --clr-red: #e60000;
+    --clr-blue: rgb(15, 63, 102);
+    --clr-gray: rgb(58, 79, 95);
+    --clr-cream: rgb(203, 206, 204);
+    --clr-green: #005C73;
+}
+
+.align-center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.p-absolute{
+    position: absolute;
+}
+
+section{
+    margin-bottom: 100px;
+}
+
+.container{
+    max-width: 1000px;
+}
+
+.navbar{
+    background: rgba(225, 225,225, 0.2);
+}
+
+.dotted-line{
+    height: 1px;
+    border-top: 4px dotted var(--clr-cream);
+}
+
+.clouds{
+    background: url('../../images/clouds.png');
+    width: 300px;
+    height: 200px;
+}
+
+.marker{
+    background: linear-gradient(transparent 60%, #ffddbc 0%);
+}
+
+
+
+/* indexのnavだけ途中からshows up する */
+
+.index-nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1.5s;
+}
+.index-nav.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.navbar-brand{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.navbar-brand img{
+    width: 130px;
+}
+
+
+
+.navbar-nav{
+    list-style: none;
+    margin-top: 0;
+    
+}
+
+.navbar-nav li{
+    padding-top: 0;
+}
+
+
+
+
+/* -----the first page starts---- */
+
+.intro{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background: url("../../images/top-image.jpg");
+    background-size: cover;
+    overflow: hidden;
+    clip-path: circle(0 at center);
+}
+
+.altIntro{
+    background: white;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    margin-top: 0;
+}
+
+.title{
+    position: relative;
+    z-index: 3;
+    top: 250px;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+}
+
+.title hr{
+    width: 50%;
+    height: 10px;
+}
+
+
+
+
+
+
+/* ------INDEX.HTML starts here------ */
+
+
+.main{
+    position: relative;
+    margin-top: 200vh;
+    background: white;
+}
+
+.altMain{
+    position: relative;
+    margin-top: 10px;
+    background: white;
+}
+
+
+.head{
+    position: relative;
+    padding: 0 10%;
+    padding-top: 200px;
+    height: 170vh;  
+    line-height: 2em; 
+    margin-bottom: 320px;  
+}
+
+.about{
+    display: flex;
+    padding: 20px 10%;
+    justify-content: center;
+    margin-bottom: 135px;
+    opacity:0;
+    transition: 1.2s;
+}
+
+.about-fadein{
+    opacity: 1;
+}
+
+.about-title{
+    width: 167px;
+    margin-top: -10px;
+}
+.about-title img{
+    width: 100%;
+}
+
+.about-text{
+    width: 60%;
+    margin-left: 50px;
+}
+
+
+
+.plate-img{
+    left: 5%; 
+    opacity: 0;
+    transition: 3s;
+}
+
+.plateImg-fadein{
+    left: 8%;
+    opacity:1;
+}
+
+.plate-img img{
+    width: 50vw;
+    height: 350px;
+    object-fit: cover;
+}
+
+.quality-img-box{
+    height: 150px;
+    left: 5%;
+    bottom: -200px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+   opacity:0;
+   transition: 1.8s ease;
+   transition-delay: 2s;
+
+}
+
+.qualityBox-fadein{
+    left: 8%;
+    opacity:1;
+}
+
+.quality-img{
+    
+     width: 30%;
+     height: 145px;
+}
+.quality-img img{
+     width: 100%;
+     height: 100%;
+}
+
+
+
+.text-box-2{
+    color: var(--clr-black);
+    padding: 0 3%;
+    right: 5%;
+    top: 70%;
+    width: 30%;
+    opacity:0;
+    transition: 3s ease;
+    transition-delay: 0.5s;
+}
+
+.textBox2-fadein{
+    opacity: 1;
+    right:10%;
+}
+
+.text-box-2-title{
+    width: 200px;
+    margin-bottom: 20px;   
+}
+
+.text-box-2-title img{
+    width: 100%;
+
+}
+
+/* newsletter */
+
+.newsletter-container{
+    background: rgb(58, 79, 95, 0.8);
+    border-top:  4px  solid var(--clr-green);
+    border-bottom:  4px  solid var(--clr-green);
+    color: var(--clr-cream);
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.newsLetter h1{
+    color: white;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+.newsLetter p{
+    font-size: 0.7em;
+}
+
+.newsLetter label{
+    font-size: 0.8em;
+    outline: none;
+    border-radius: 10px;
+}
+
+.newsLetter input{
+    width: 25%;
+    height: 30px;
+    outline: none;
+}
+
+.newsLetter form button{
+    justify-content: center;
+    background: rgb(142, 160, 165);
+    color: rgb(245, 245, 245);
+   font-size: 0.9em;
+   font-weight: bold;
+    margin: 0 auto;
+    border: none;
+    width: 130px;
+    margin-top: 15px;
+    padding: 5px 20px;
+    border-radius: 0 2px 2px 0;
+    letter-spacing: 1em;
+    outline: none;
+}
+
+.newsLetter form button:hover{
+    background: rgb(109, 125, 129);
+}
+
+
+
+
+
+/* history section */
+
+.history-section{
+    display: flex;
+    width: 100vw;
+    min-height: 70vh;
+    margin-top: 200px;
+}
+
+.history-section-text{
+    width: 100%;
+    padding: 2% 5% 5% 5%  ;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -100px;
+    opacity: 0;
+    transition: 1.8s;
+}
+
+.historyText-fadein{
+    margin-left: 0;
+    opacity: 1;
+}
+
+.history-section-text h2{ 
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.history-section-text p{
+    margin-bottom: 40px;
+    font-size: 0.9em;
+}
+
+.history-section-text button{
+    margin-top: 25px;
+    padding:  15px 20px;
+    border: 4px solid var(--clr-blue);
+    background: none;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: var(--clr-blue);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.history-section-text a{
+    color:var(--clr-blue);
+}
+.history-section-text a:hover{
+    text-decoration: none;
+}
+
+
+
+.history-section-text button:hover{
+   background: rgba(221, 221, 221, 0.514);
+}
+
+.history-section-img {
+    width: 100%;
+    margin-right: -50px;
+    opacity:0;
+    transition: 1.8s;
+}
+
+.historyImg-fadein{
+    margin-right: 0;
+    opacity:1;
+}   
+
+.history-section-img  img{
+    width: 100%;
+}
+
+
+
+
+
+/* class-section */
+
+.class-section{
+    color: var(--clr-blue);
+    height: 160vh;
+    padding-bottom: 300px;
+    padding-top: 120px;
+    text-align: center;
+    margin-bottom: 0;
+    transition: 2.5s;
+    background: url(../../images/texture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 3s;
+}
+
+.class-fadein{
+    opacity: 1;
+}
+
+
+
+.class-section hr{
+    width: 50%;
+}
+
+
+.class-section-title{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.class-section-title h6{
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.class-section-title h6, .class-section-title h2{
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.boxes-container{
+    padding-top: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin:0 auto;
+}
+
+
+.box{  
+    width: 30%;
+    font-size: 0.8em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.box h4{
+    font-weight: bold;
+}
+
+.imgcard-caption{
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;   
+    line-height: 2em;
+}
+
+.type1{
+  margin-right: 0;
+}
+
+.box img{
+    width: 78%;
+}
+
+.type2 img{ 
+    width: 60%;
+}
+
+.class-section button{
+    margin-top: 50px;
+    padding: 20px 30px;
+    border: 1px solid var(--clr-green);
+    background: none;
+    transition: 0.3s;
+}
+
+.class-section button a{
+    color: var(--clr-green);
+}
+
+.class-section button:hover{
+    background: rgba(0, 92, 115, 0.637);
+    border: white 1px solid;
+    color: white;
+}
+
+.class-section button:hover a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* brand-sectino */
+
+.brand-section{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 300px;
+    margin-bottom: 250px;
+    justify-content: center;
+}
+
+.back-square{
+    top: -35px;
+    right: 8%;
+    width: 40%;
+    height: 520px;
+    background: rgba(46, 70, 70, 0.678);
+    z-index: 0;
+    opacity:0;
+    transition: 1.8s;
+    transition-delay: 0.5s;
+}
+
+.backSquare-fadein{
+    opacity:1;
+    right: 10%
+}
+
+.brand-section-text{
+    margin-left: -140px;
+    color: white;
+    width: 40%;
+    padding:2% 0;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    transition: 1.8s ease;
+    transition-delay: 0.5s;
+}
+
+.brandText-fadein{
+    margin-left: -150px;
+    opacity:1
+}
+
+.aritaBrandLogo-box{
+    margin: 0 auto;
+    width: 150px;
+    margin-bottom: 40px;
+}
+.aritaBrandLogo-box img{
+    width: 100%;
+}
+
+.brand-title{
+    width: 450px;
+    left: 180px;
+    top:-180px;
+    max-height: 150px;
+    background: rgba(255, 255, 255, 0.445);
+    padding: 20px 10px;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-align: start;
+    font-size: 2.2em;
+    color: rgb(10, 77, 94);
+    opacity: 0;
+    transition: 1.8s ease;
+}
+
+.brandTitle-fadein{
+    opacity: 1;
+    left:200px;
+}
+
+.brand-section-text p{
+    letter-spacing: 0.15em;
+    font-size: 0.8em;
+    padding-left: 30px;
+    justify-content: end;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 67%;
+    line-height: 2;
+}
+
+.brand-section-img{
+    z-index: 1;
+    margin-right: 60px;
+    opacity: 0;
+    transition: 1.8s ease;
+    transition-delay: 0.8s;
+}
+
+.brandImg-fadein{
+    opacity:1;
+    margin-right: 50px;
+}
+
+.brand-section-text a{
+    font-size: 1.2em;
+    font-family: 'Kosugi Maru', sans-serif;
+    border-bottom: 2px var(--clr-blue) solid;
+    padding: 20px 30px;
+    background: none;
+    color: var(--clr-blue);
+    font-weight: bold;
+    transition: 0.3s;
+}
+.brand-section-text a:hover{
+    text-decoration: none;
+    font-size: 1.25em;
+    
+}
+
+
+
+
+
+
+
+/* --------------------learn.html------------------- */
+
+.process{
+    position: relative;
+}
+
+
+
+.moreAbout{
+    min-height: 100vh;
+    padding-top: 200px;
+}
+
+.moreAbout h1{
+    margin: 0 auto;
+    font-size: 1.2em;
+    padding-top: 45px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--clr-green);
+    border-radius: 50%;
+}
+
+.moreAbout h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-size: 4rem;
+    position: relative;
+}
+
+.moreAbout section{
+    margin-top: 100px;
+}
+
+.moreAbout hr{
+    width: 50%;
+}
+
+.history h2::after{
+    content: '有田焼の歴史';
+    font-size: 12px;
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    right: 0;
+}
+
+.Aritacho h2::after{
+    content: '日本磁器の生誕地　有田';
+    font-size: 12px;
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    right: 0;
+}
+
+.process h2::after{
+    content: '有田焼ができるまで';
+    font-size: 12px;
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    right: 0;
+}
+
+.moreAbout-img{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.moreAbout .history p,
+.moreAbout .Aritacho p{
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    line-height: 2em;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-weight: 100;
+    width: 45%;
+}
+
+
+/* ------------S L I D E------------- */
+
+.process{
+    overflow: hidden;
+}
+
+
+.slick-nav{
+    display: flex;
+    padding-top: 50px;
+}
+
+.slick-nav li{
+    width: 300px;
+    height: 200px;
+    margin: 30px;       
+}
+
+.big-screen img{
+    float: left;
+    transition: 3s;
+}
+
+.slick-nav li img{
+    width: 130px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.slick-slider{
+    width: 900px;
+}
+
+.slick-slider img{
+    width: 500px;
+    height: 350px;
+}
+
+ .slick-nav li p{
+     font-size: 0.7em;
+     margin: 0 auto;
+     margin-bottom: 30px;
+     margin-right: 30px;
+ } 
+
+ .slick-slider .big-screen h3{
+     padding-left: 560px;
+     text-align: start;
+     margin-top: 20px;
+     margin-bottom:20px;
+}
+
+ .slick-slider .big-screen p{
+     line-height: 1.7em;
+     font-size: 0.95em;;
+     font-weight: 100;
+    width: 330px;
+    padding: 0 2%;
+    margin-left: 550px;
+}
+
+ .slick-nav .slick-current{
+    transform: scale(1.1);
+    text-decoration-color: var(--clr-red);  
+}
+ .slick-nav .slick-current h3{
+    text-decoration: underline;
+    color: red;
+    text-decoration-color: var(--clr-red);  
+}
+
+
+
+
+
+ /* ------------brands start ---------------*/
+
+
+ .brand-nav .navbar{
+    background: none;
+ }
+
+.brands-container{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+}
+
+.brand-detail-container{
+    width: 50%;
+    height: 100vh;
+}
+
+.brands-rows-container{
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 130px;
+    overflow: scroll;
+}
+
+.brand-picture{
+    height: 38%;
+    width: 100%;
+    margin-top: 15%;   
+}
+
+.brand-caption{
+    height: 40%;
+    width: 100%;
+}
+
+.brand-items{
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+}
+
+.captureImg{
+    width: 100%;
+    display: none;
+}
+
+.captureImg img{
+    width: 100%;
+}
+
+.brand-items img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.brand-items p{
+    text-align: center;
+    margin-top: -30px;
+    opacity: 0;
+    transition: 1.8s;
+}
+
+.brand-titles{
+    font-weight: bold;
+    font-size: 6em;
+    line-height: 0.7em;
+    font-family:Helvetica, Arial, sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.kinsyai-title{
+    font-size: 0.8em;
+    z-index: 100;   
+}
+
+.brand-title-box{
+    margin-top: 50%;
+    transform: translateY(-50%);
+    margin-right: 50px;   
+}
+
+.brand-title-box h1{
+    text-align: end;
+    vertical-align: middle;
+    font-size: 4.5rem;
+    margin-bottom: 86px;
+}
+
+.brand-items img:active{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.brand-items img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.clickedItem{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.brand-items img:hover + p{
+    opacity: 1;
+}
+
+.capture-detail{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 48px;
+    color: var(--clr-black);
+}
+
+.capture-detail h1{
+    font-weight: 200;
+    font-size: 2em;
+    display: inline-block;
+    margin-right: 50px;
+    font-family: Noto;
+    color: var(--clr-green);
+}
+.capture-detail h2{
+    font-size: 0.8em;
+    display: inline-block;
+}
+.capture-detail p{
+    line-height: 1.7em;
+    margin-top: 10px;
+    font-size: 0.8em;
+    letter-spacing: 0.07em;
+}
+
+
+
+
+/* --------CONTACT.HTML ---------*/
+
+.form-box{
+    padding-top: 120px;
+    text-align: center;
+    height: 120vh;
+}
+
+.form-box h1{
+    margin-bottom: 30px;
+}
+
+.form-box form{
+    width: 100%;
+    text-align: start;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.form{
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: rgb(23, 124, 138);
+    font-size: 13px;
+    width: 30%;
+    position: relative;
+    height: 60px;
+}
+
+.form-box input{
+    width: 100%;
+    height: 100%;
+    color: var(--clr-green);
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+
+.form-box　label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.content-label{
+    position: relative;
+    border: none;
+    width: 30%;
+    color: rgb(23, 124, 138);
+    font-size: 13px;
+}
+
+.content-form{
+    padding: 10px;
+    outline: none;
+}
+
+
+.form label::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0 ;
+    bottom: -1px;
+    border-bottom: 3px solid var(--clr-green);
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form-box input:focus + .label-name .content-name, 
+.form-box input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+}
+
+.form-box input:focus + .label-name::after,
+.form-box input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+
+
+/* ------footer-------- */
+
+footer{
+    padding-top: 100px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: rgba(10, 45, 73, 0.233);
+    z-index: 1000;
+} 
+
+.footer-logo{
+    width: 140px;
+}
+
+footer div{
+    margin: 0 auto;
+}
+
+.footer-logo img{
+    width: 100%;
+}
+
+footer div ul{
+    list-style: none;
+    display: flex;
+}
+footer div ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.footer-nav a{
+    font-size: 0.7em;
+    color: var(--clr-green);
+}
+
+.footer-sns li i{
+    font-size: 1.7em;
+    margin-left: 30px;
+}
+
+footer p{
+   text-align: center;
+    font-size: 0.5em;
+}
+
+.footer-sns li a{
+    color: var(--clr-blue);
+}
+
+
+@media screen and (max-width: 1150px) {
+    
+    .brand-section-text p{
+        font-size: 0.6em;
+        width: 50%;
+    }
+
+    .brand-section-text a{
+        width: 30px;
+        font-size: 0.9em;
+    }
+
+    }
+
+
+@media screen and (max-width: 997px) {
+    
+    .brand-section{
+        display: block;
+        margin-top: 300px;
+        margin-bottom: 250px;
+    }
+
+    .back-square{
+        display: none;
+    }
+
+    .brand-section-text{
+        margin-left: 0;
+        background: rgba(46, 70, 70, 0.678);
+        color: white;
+        font-size: 1.5em;
+        width: 100%;
+        padding:10% 20%;
+        text-align: center;
+    }
+
+    .brand-section-text p{
+        width: 400px;
+    }
+
+    .brand-section h2{
+        left: -20px;
+        top: 0;
+        width: 200px;
+        max-height: 430px;
+        text-align: justify;
+        writing-mode: vertical-rl;
+        letter-spacing: 0.1em;
+    }
+
+   
+
+    .brand-section-text a{
+        width: 20px;
+        font-size: 0.65em;
+    }
+
+    .brand-section-img{
+        z-index: 1;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .brand-section-img{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 10px;
+    }
+
+    .box p{
+        font-size: 0.9em;
+    }
+    .box h4{
+        font-size: 1.3em;
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
