@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- normalised css -->
+  <link rel="stylesheet" href="/vendor/css/normalised.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Serif+JP:wght@200;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- style.css -->
+  <link rel="stylesheet" href="vendor/css/style.css">
+
+  <title>Arita Ware</title>
+</head>
+
+<body>
+
+  <!-- opening/top画面 -->
+  <div class="title">
+    <h1>Welcome to the world of Arita porcelain
+    </h1>
+    <hr>
+    <h4>400年進化し続ける有田焼の奥深い世界。</h4>
+  </div>
+
+
+  <section class="intro"></section>
+
+  <!-- index.htmlのみ途中から表示されるnav -->
+  <div class="index-nav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand mt-0" href="#"><img src="images/logoholizontal.png" alt="ロゴ"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item  mr-3 active">
+            <a class="nav-link" href="index.html">トップ <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="learn.html">もっと知る</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="brands.html">ブランド</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="contact.html">コンタクト</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div> <!-- nav ends -->
+
+
+
+  <div class="main">
+
+    <!-- head 有田焼とは -->
+
+    <section class="head">
+      <div class="about">
+        <div class="about-title">
+          <img src="images/有田焼とは.png" alt="有田焼とは">
+        </div>
+        <div class="about-text">
+          <p>有田焼とは、佐賀県有田町周辺で焼かれた磁器の総称です。硬く丈夫で、透明感のある白磁に、藍色や赤・黄・金など鮮やかな色が繊細にほどこされているのが特徴です。また、藍色で描かれた染付の器も有名です。
+            有田の磁器は17世紀後半から18世紀後半にかけて、国内はもとよりヨーロッパを主とした海外へも多く出荷されるようになりました。</p>
+        </div>
+      </div>
+      
+      <div class="plate-img p-absolute">
+        <img src="images/head-img.jpg" alt="有田焼　プレート">
+      </div>
+      <div class="quality-img-box p-absolute">
+        <div class="quality-img">
+          <img src="images/quality-1.jpg" alt="有田焼　カップ">
+        </div>
+        <div class="quality-img">
+          <img src="images/quality-2.jpg" alt="有田焼　コップ">
+        </div>
+        <div class="quality-img">
+          <img src="images/quality-3.jpg" alt="有田焼　小皿">
+        </div>
+      </div>
+      <div class="text-box-2 p-absolute">
+        <div class="text-box-2-title">
+          <img src="images/Arita-tokutyou-title.png">
+        </div>
+        <p>薄くて軽いため繊細なイメージがある有田焼ですが、耐久性に優れており陶器よりも丈夫だと言われています。 さらに、磁土と石の粉を混ぜて作られるため、きめ細やかでなめらかな手触りを楽しむことができます。
+          また、素地が白いため絵付けにも適しており、鮮やかな色で描かれる繊細な絵付けも魅力です。</p>
+      </div>
+
+    </section>
+
+
+    <section class="newsLetter">
+      <div class="newsletter-container">
+        <h1>毎週、有田焼の情報をお届け <i class="fa fa-paper-plane"></i> </h1>
+        <p>- ライターによるコラム、イベント情報などをチェック！ -</p>
+        <form>
+          <label for="email">メールアドレス:</label>
+          <input name="email" type="email">
+
+          <button>登録</button>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- first-section/歴史/ -->
+    <section class="history-section">
+      <div class="history-section-text">
+        <h2 class="mb-4">四百年、日本の食卓に<br>彩を添えてきました。</h2>
+        <p>
+          有田焼とは色とりどりの絵具で彩色された日本を代表する陶磁器です。その歴史は古く４００年前の江戸時代に遡ります。17世紀初めに佐賀県の有田で１人の陶工が泉山で陶石を発見したのをきっかけに有田で日本初の陶磁器の製造がはじまったと言われています。
+        </p>
+        <hr>
+        <button><a href="learn.html">有田焼の歴史</a></button>
+      </div>
+
+      <div class="history-section-img">
+        <img src="images/section1-img.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- class-section/シリーズ一覧/スライドイン -->
+
+    <section class="class-section">
+      <div class="class-section-title">
+        <div class="line1">
+          <hr>
+        </div>
+
+        <div class="class-section-title">
+          <h6>最も知られている３つの洋式</h6>
+          <h2>有田三洋式</h2>
+        </div>
+
+        <div class="line2">
+          <hr>
+        </div>
+      </div>
+      <!-- 有田三洋式:横並びで表示させたい -->
+      <div class="boxes-container">
+        <div class="box type1">
+          <img src="images/kakiemon.png" alt="柿右衛門洋式　有田焼">
+          <h4 class="img-title">柿右衛門洋式</h4>
+          <p class="imgcard-caption" id="kakiemon">主に大和絵的な花鳥図などを題材として暖色系の色彩で描かれ、非対称で乳白色の余白が豊かな構図が特徴。
+            上絵の色には赤・黄・緑、そして青・紫・金などが用いられる。 同じ有田焼でも、緻密な作風の鍋島様式や寒色系で余白の少ない古九谷様式と異なり、柔らかく暖かな雰囲気を感じさせる。</p>
+        </div>
+        <div class="box type2">
+          <img src="images/nabeshima.png" alt="鍋島洋式　有田焼">
+          <h4 class="img-title">鍋島洋式</h4>
+          <p class="imgcard-caption" id="nabeshima">主に大和絵的な花鳥図などを題材として暖色系の色彩で描かれ、非対称で乳白色の余白が豊かな構図が特徴。
+            上絵の色には赤・黄・緑、そして青・紫・金などが用いられる。 同じ有田焼でも、緻密な作風の鍋島様式や寒色系で余白の少ない古九谷様式と異なり、柔らかく暖かな雰囲気を感じさせる。</p>
+        </div>
+        <div class="box type3">
+          <img src="images/koimari.png" alt="古伊万里洋式　有田焼">
+          <h4 class="img-title">古伊万里洋式</h4>
+          <p class="imgcard-caption" id="koimari">主に大和絵的な花鳥図などを題材として暖色系の色彩で描かれ、非対称で乳白色の余白が豊かな構図が特徴。
+            上絵の色には赤・黄・緑、そして青・紫・金などが用いられる。 同じ有田焼でも、緻密な作風の鍋島様式や寒色系で余白の少ない古九谷様式と異なり、柔らかく暖かな雰囲気を感じさせる。</p>
+        </div>
+      </div>
+      <button><a href="brands.html">ブランド一覧</a></button>
+    </section>
+
+    <!-- brand section/有田三洋式 -->
+
+
+    <section class="brand-section">
+      <div class="back-square p-absolute">
+
+      </div>
+      <div class="brand-section-img">
+        <img src="images/shokutaku.jpg" alt="食卓　有田焼　器">
+      </div>
+      <h2 class="brand-title p-absolute">有田焼があると<br>もう一品作りたくなる</h2>
+      <div class="brand-section-text">
+        <div class="aritaBrandLogo-box">
+          <img src="images/AritaBrandsLogo.png" alt="">
+        </div>
+        <p>模様が鮮やかな有田焼は、和食だけでなく洋食にもぴったりです。小鉢からオムライスを乗せれる大きなプレートまで、様々な用途やスタイルに合わせて使えるお気に入りの器に出会えるはずです。</p>
+        <a href="brands.html">シリーズ一覧</a>
+      </div>
+
+    </section>
+
+
+
+    <footer>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="learn.html">もっと知る</a></li>
+          <li><a href="brands.html">ブランド</a></li>
+          <li><a href="contact.html">コンタクト</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <div class="footer-logoImg">
+          <img src="images/logoholizontal.png" alt="ロゴ">
+        </div>
+      </div>
+      <div class="footer-sns">
+        <ul>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <p>© 2020 WOA inc.</p>
+    </footer>
+
+
+
+
+
+  </div> <!-- main container-end -->
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+
+
+  <!-- ------- js ------- -->
+  <script type="text/javascript">
+
+    // トップイメージのエフェクト
+    var intro = document.querySelector('.intro');
+    var userAgent = window.navigator.userAgent.toLowerCase();
+    var main = document.querySelector('.main');
+    if (userAgent.indexOf('edge') != -1 || userAgent.indexOf('chrome') != -1) {
+
+    } else if (userAgent.indexOf('safari') != -1) {
+      intro.classList.add('altIntro');
+      intro.classList.remove('intro');
+      main.classList.add('altMain');
+      main.classList.remove('main');
+    }
+    window.addEventListener('scroll', function () {
+
+      var value = window.scrollY;
+      intro.style.clipPath = "circle(" + value + "px at center)"
+      // navの表示
+      var scroll = document.querySelector('.index-nav');
+      scroll.classList.toggle("active", window.scrollY > 1490)
+
+    })
+
+
+    // top, section1 section2 section3の表示
+    $(window).scroll(function () {
+      let scrollTop = $(document).scrollTop();
+
+      let about = $('.about');
+      let aboutTop = about.offset().top;
+      if (scrollTop > aboutTop - 500) {
+        $('.about').addClass("about-fadein");
+      }
+      if (scrollTop > aboutTop - 100) {
+        $('.plate-img').addClass("plateImg-fadein");
+        $('.quality-img-box').addClass("qualityBox-fadein");
+        $('.text-box-2').addClass("textBox2-fadein");
+      }
+
+      let history = $('.history-section');
+      let historyTop = history.offset().top;
+      if(scrollTop > historyTop - 500){
+        $('.history-section-text').addClass('historyText-fadein');
+        $('.history-section-img').addClass('historyImg-fadein');  
+      }
+
+      let classSection = $('.class-section');
+      let classTop = classSection.offset().top;
+      if(scrollTop > classTop - 500){
+        $('.class-section').addClass('class-fadein');
+      }
+
+      let brand = $('.brand-section');
+      let brandTop = brand.offset().top;
+      if(scrollTop > classTop - 500){
+        $('.back-square').addClass('backSquare-fadein');
+        $('.brand-section-text').addClass('brandText-fadein');
+        $('.brand-section-img').addClass('brandImg-fadein');
+        $('.brand-title').addClass('brandTitle-fadein');
+      }
+
+    })
+
+
+  </script>
+
+
+  <!-- bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>
